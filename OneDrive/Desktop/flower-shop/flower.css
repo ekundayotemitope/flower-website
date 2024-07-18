@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    border: none;
+}
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color: rgba(255, 255, 255, 0.559);
+    padding:1rem 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bolder;
+}
+header .logo span{
+    color: rgb(208, 11, 76);
+}
+header .navbar a{
+    font-size: 1rem;
+    padding: 10px;
+    color: black;
+    border-radius: 1rem;
+    /* border: 1px solid; */
+}
+header .navbar a:hover{
+  color: white;
+  background-color: rgb(208, 11, 76);
+}
+
+
+section{
+    padding: 1rem 8%;
+}
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    background: url(./img/freepik.avif) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    max-width: 50rem;
+}
+.home .content h3{
+    font-size: 5rem;
+    color: black;
+}
+.home .content span{
+    font-size: 2.8rem;
+    color: rgb(208, 11, 76);
+    
+}
+.home .content p{
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 3rem;
+    background: rgba(0, 0, 0, 0.902);
+    color:white;
+    padding: 0.5rem;
+    cursor: pointer;
+   font-size: 1rem; 
+}
+.btn:hover{
+    background: rgb(208, 11, 76);
+}
+/* aboutsection */
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    margin: 1rem;
+}
+.heading span{
+    color: rgb(208, 11, 76);
+
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+.about .row .video-container{
+    position: relative;
+    flex: 1 1 30rem;
+}
+.about .row .video-container img{
+    width: 100%;
+    height: 90vh;
+    border: 1rem solid pink;
+    border-radius: 4rem;
+    object-fit: cover;
+}
+.about .row .video-container h3{
+
+}
+.about .row h3{
+    font-size: 2rem;
+    color: black;
+    margin-left: 110px;
+}
+.about .row .content p{
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 3rem;
+}
+ .about .btn{
+    float: right;
+    
+ }   
+
+.about .row .content{
+    flex: 1 1 30rem;
+}
+/* icon section */
+.icon-container{
+ background: pink;  
+ display: flex;
+gap: 1rem; 
+}
+.icon-container .icon{
+   display: flex;
+}
+.icon-container img{
+    width: 50px;
+    display: flex;
+    padding: 10px;
+   margin-left: 10rem;
+   
+}
+.info{
+    margin-left: 10rem;
+   font-size: 10px;
+}
+
+.icon-container .icon img{
+   align-items: center;
+   width: 50px;
+  display: flex;  
+}
+.icon-container .icon h3{
+
+}
+.icon-container .icon span{
+font-size: 10px; 
+}
+/* product section */
+.product{
+    margin: none;
+}
+
+
+.product .box-container{
+    display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+}
+/* contact section */
+.contact{
+    margin: 2rem;
+   
+}
+.heading{
+    background: rgba(255, 192, 203, 0.253);
+    padding: 5px;
+    width: 95%;
+   margin-left: 20px;
+}
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.contact .row form{
+    flex: 1 1 15rem;
+    padding: 2rem 2.5rem;
+    box-shadow: rgba(0, 0, 0, 0.575);
+    border: 2px solid rgba(0, 0, 0, 0.575);
+    background: rgba(255, 192, 203, 0.158);
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 40px;
+    height: max-content;
+}
+.contact .row .image{
+    flex: 1 1 24rem;
+}
+.contact .row .image img{
+    width: 90%;
+    margin-top: 40px;
+}
+.contact .row form .box{
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.368);
+    text-transform: none;
+    border: solid black;
+    border-radius: 10px;
+    margin: 1rem 0;
+    width: 100%;
+}
+.contact .row form .box:focus{
+    border-color: pink;
+}
+
+.contact .row form textarea{
+height: 12rem;
+resize: none;
+}
+/* footer section */
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.footer .box-container .box{
+    flex: 1 1 15rem;
+}
+.footer .box-container .box h3{
+    color: black;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+.footer .box-container .box a{
+    display: block;
+    color: rgba(0, 0, 0, 0.53);
+    font-size: 1rem;
+    padding: 1rem;
+}
+.footer .box-container .box a:hover{
+    color: rgb(179, 7, 64);
+    text-decoration: underline;
+    
+}
+.footer{
+    margin-bottom: 1px;
+    border-top: 1px solid rgb(205, 11, 76);
+    border-bottom: 1px solid rgb(205, 11, 76);
+}
